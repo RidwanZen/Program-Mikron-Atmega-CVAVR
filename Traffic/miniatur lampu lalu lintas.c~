@@ -1,0 +1,63 @@
+#include <mega16.h>
+#include <delay.h>
+void main(void)
+{
+PORTB=0xFF;
+DDRB=0x00;
+PORTC=0x00;
+DDRC=0xFF;
+PORTD=0x00;
+DDRD=0xFF;
+while (1)
+      {
+      if(PINB.0==0)
+      {
+       PORTC=0x0C;
+      PORTD=0x09; 
+      delay_ms (100);
+      PORTC=0x0A;
+      PORTD=0x09;
+      delay_ms (100);       
+      PORTC=0x21;
+      PORTD=0x09;
+      delay_ms (100); 
+      PORTC=0x11;
+      PORTD=0x09;
+      delay_ms (100);  
+      PORTC=0x09;
+      PORTD=0x0C;
+      delay_ms (100);
+      PORTC=0x09;
+      PORTD=0x0A;
+      delay_ms (100); 
+      PORTC=0x09;
+      PORTD=0x21;
+      delay_ms (100);
+      PORTC=0x09;
+      PORTD=0x11;
+      delay_ms (100);  
+      } 
+
+      if(PINB.1==0)
+      {
+      PORTC=0x0C;
+      PORTD=0x0C; 
+      delay_ms (100);
+      PORTC=0x0A;
+      PORTD=0x0A;
+      delay_ms (100);       
+      PORTC=0x11;
+      PORTD=0x11;
+      delay_ms (100); 
+      PORTC=0x21;
+      PORTD=0x21;
+      delay_ms (100);  
+      PORTC=0x11;
+      PORTD=0x11;
+      delay_ms (100);
+      PORTC=0x0A;
+      PORTD=0x0A;
+      delay_ms (100);   
+      }
+      }
+}

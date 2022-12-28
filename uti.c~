@@ -1,0 +1,23 @@
+# include <mega16.h>
+# include <delay.h>
+
+void main(void)
+{
+DDRC=0x00;
+DDRB=0xFF;
+PORTC=0xFF;
+PORTB=0x00;
+
+while(1)
+{
+if (PINC.0==0)
+{PORTB=0b00001001;
+delay_ms(50);}
+if (PINC.1==0)
+{PORTB=0b0000110;
+delay_ms(50);}
+if (PINC.2==0)
+{PORTB=0x00;
+delay_ms(50);}
+}
+}

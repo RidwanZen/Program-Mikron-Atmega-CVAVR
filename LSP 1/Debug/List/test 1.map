@@ -1,0 +1,26 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+angka                                                                             0x0160      10
+data_temp                                                                         0x016A       2
+x                                                                                 0x016C       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+satuan                                                                            R4,R5        2
+puluhan                                                                           R6,R7        2
+ratusan                                                                           R8,R9        2
+ribuan                                                                            R10,R11      2
+data                                                                              R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ambil_data                                                                        0x00060     21
+tampil                                                                            0x00075     29
+main                                                                              0x00092     68
